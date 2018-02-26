@@ -19,17 +19,6 @@
 ; Ignore metro
 .*/node_modules/metro/.*
 
-; Custom ignores
-.*/ios/Pods/*
-.*/__tests__/*
-.*/Libraries/react-native/ReactNative.js
-.*/node_modules/mitt/src/.*
-.*/node_modules/match-at/lib/.*
-.*/node_modules/react-static-container/.*
-.*/node_modules/eslint-plugin-jsx-a11y/.*
-.*/node_modules/react-native-notifications/.*
-.*/node_modules/react-native-tab-view/.*
-
 [include]
 
 [libs]
@@ -46,16 +35,15 @@ munge_underscores=true
 
 module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
 
-suppress_type=$FlowIssue
-suppress_type=$FlowFixMe
-suppress_type=$FlowFixMeProps
-suppress_type=$FlowFixMeState
-
 module.file_ext=.js
 module.file_ext=.jsx
 module.file_ext=.json
 module.file_ext=.native.js
-module.file_ext=.ios.js
+
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FlowFixMeProps
+suppress_type=$FlowFixMeState
 
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe\\($\\|[^(]\\|(\\(<VERSION>\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)
 suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(<VERSION>\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)?:? #[0-9]+

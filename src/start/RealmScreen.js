@@ -34,7 +34,7 @@ class RealmScreen extends PureComponent<Props, State> {
       (this.props.navigation &&
         this.props.navigation.state.params &&
         this.props.navigation.state.params.realm) ||
-      '',
+      'https://lkmore.zulipchat.com',
     error: undefined,
   };
 

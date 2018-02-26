@@ -19,7 +19,8 @@
 #import <React/RNSentry.h> // This is used for versions of react >= 0.40
 #import <React/RCTLinkingManager.h>
 #import <asl.h>
-#import "RCTLog.h"
+//#import "RCTLog.h"
+#import <React/RCTLog.h>
 #import "RNNotifications.h"
 #import <React/RCTPushNotificationManager.h>
 
