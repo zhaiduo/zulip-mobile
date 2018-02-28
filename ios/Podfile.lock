@@ -1,4 +1,6 @@
 PODS:
+  - React/ART (0.53.3):
+    - React/Core
   - React/BatchedBridge (0.53.3):
     - React/Core
     - React/cxxreact_legacy
@@ -41,6 +43,7 @@ PODS:
   - yoga (0.53.3.React)
 
 DEPENDENCIES:
+  - React/ART (from `../node_modules/react-native`)
   - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -66,6 +69,6 @@ SPEC CHECKSUMS:
   React: af66244a7d630be2aef03b4ddfe3570e4eff39fc
   yoga: 55da126afc384965b96bff46652464373b330add
 
-PODFILE CHECKSUM: 49020e1812fab9cb78a0f99ea4f8765b12d7d7f9
+PODFILE CHECKSUM: e98749a6dfceb3be6e74868ec103da44ae4c1057
 
 COCOAPODS: 1.4.0

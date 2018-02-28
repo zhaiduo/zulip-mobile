@@ -13,6 +13,7 @@ target 'ZulipMobile' do
     'RCTAnimation',
     'RCTGeolocation',
     'RCTImage',
+    'ART',
     'RCTLinkingIOS',
     'RCTNetwork',
     'RCTSettings',
