@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ZulipMobile</string>
+    <plurals name="messages">
+        <item quantity="one">Hello, %1$s! You have a new message.</item>
+        <item quantity="other">Hello, %1$s! You have %2$d new messages.</item>
+    </plurals>
 </resources>

@@ -28,8 +28,10 @@ public class ShareImageAndroid extends ReactContextBaseJavaModule {
         shareIntent.setAction(Intent.ACTION_SEND);
         shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(path));
         shareIntent.setType("image/jpeg");
+        //Intent intent = Intent.createChooser(shareIntent,
+        //        getReactApplicationContext().getResources().getText(R.string.send_to));
         Intent intent = Intent.createChooser(shareIntent,
-                getReactApplicationContext().getResources().getText(R.string.send_to));
+                getReactApplicationContext().getResources().getText(0));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         getReactApplicationContext().startActivity(intent);
     }

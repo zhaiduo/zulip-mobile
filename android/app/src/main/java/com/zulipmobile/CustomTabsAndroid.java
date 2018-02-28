@@ -51,8 +51,9 @@ class CustomTabsAndroid extends ReactContextBaseJavaModule {
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(i);
             } else {
-                // no browser
-                Toast.makeText(getReactApplicationContext(), R.string.no_browser_found, Toast.LENGTH_SHORT).show();
+                // no browser "No browser found"
+                //Toast.makeText(getReactApplicationContext(), R.string.no_browser_found, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getReactApplicationContext(), "No browser found", Toast.LENGTH_SHORT).show();
             }
         }
     }
